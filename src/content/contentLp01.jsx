@@ -259,7 +259,7 @@ const contentLp01 = {
         </svg>
       ),
       title: "Email",
-      description: `${infos.email}@${infos.domain}`,
+      description: `${infos.email}@${infos.emailSecundario}`,
     },
     card3: {
       icon: (
