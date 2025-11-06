@@ -38,10 +38,7 @@ const contentLp01 = {
       title: (
         <h1>
           Advogado Trabalhista em Joinville — Defesa dos seus{" "}
-          <span className="text-lpTitle text-primary">
-            {" "}
-            direitos trabalhistas
-          </span>{" "}
+          <span className="text-lpTitle font-bold"> direitos trabalhistas</span>{" "}
         </h1>
       ),
       subtitle:
@@ -189,7 +186,7 @@ const contentLp01 = {
         description: "Informamos prazos, custos e possibilidades com clareza.",
       },
       card4: {
-        icon: <Handshake width={32} height={32} />,
+        icon: <ChartNoAxesCombined width={32} height={32} />,
         title: "Comprometimento com resultados",
         description: "Buscamos o melhor resultado com ética e dedicação.",
       },
