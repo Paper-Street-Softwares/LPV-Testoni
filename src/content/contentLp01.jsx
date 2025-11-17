@@ -12,7 +12,8 @@ import {
 import { infos } from "./content";
 import { Handshake } from "lucide-react";
 import { ChartNoAxesCombined } from "lucide-react";
-import { Gavel } from "lucide-react";
+import { Gavel, FileText, Users, CircleDollarSign } from "lucide-react";
+import { p } from "framer-motion/client";
 
 // import img1 from "../assets/imgs/about/image1.webp";
 // import img2 from "../assets/imgs/about/image2.webp";
@@ -37,12 +38,13 @@ const contentLp01 = {
     textArea: {
       title: (
         <h1>
-          Advogado Trabalhista em Joinville — Defesa dos seus{" "}
-          <span className="text-lpTitle font-bold"> direitos trabalhistas</span>{" "}
+          Foi demitido injustamente? Recebeu menos do que deveria? A empresa não
+          pagou
+          <span className="text-lpTitle font-bold"> seus direitos?</span>{" "}
         </h1>
       ),
       subtitle:
-        "Atuamos em casos de insalubridade, periculosidade, rescisão indireta, horas extras e indenizações trabalhistas.",
+        "Nossos advogados trabalhistas em Joinville atuam para que você receba corretamente todos os seus direitos.",
       buttonLabel: "Entre em contato com a Testoni",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
@@ -50,35 +52,57 @@ const contentLp01 = {
   },
   features: {
     sectionHeader: {
-      miniTag: "DEFENDA SEUS DIREITOS TRABALHISTAS",
+      miniTag: "SITUAÇÕES QUE RESOLVEMOS TODOS OS DIAS",
       title:
         "Advocacia especializada na proteção dos seus direitos trabalhistas em Joinville",
     },
     cards: {
       card1: {
-        icon: <BriefcaseBusiness />,
-        title: "Reclamações Trabalhistas e Direitos do Empregado",
-        description:
-          "Defesa dos direitos do trabalhador em casos de rescisão, horas extras, verbas não pagas e vínculos de emprego não reconhecidos.",
+        icon: <FileText />,
+        title: "Direitos do Empregado e Rescisões",
+        description: (
+          <p>
+            ✔ Reconhecimento de vínculo (PJ, MEI, autônomo)
+            <br />✔ Rescisão indireta
+            <br />✔ Pagamento das verbas rescisórias
+            <br />✔ Despedida discriminatória
+            <br />✔ Reversão de justa causa
+          </p>
+        ),
       },
       card2: {
-        icon: <ShieldAlert />,
+        icon: <CircleDollarSign />,
 
-        title: "Insalubridade, Periculosidade e Condições de Trabalho",
-        description:
-          "Ações para garantir adicionais de insalubridade e periculosidade, assegurando condições seguras e dignas de trabalho.",
+        title: "Jornadas e Pagamentos",
+        description: (
+          <p>
+            ✔ Horas extras não pagas
+            <br />✔ Adicional noturno e intervalos
+            <br />✔ FGTS não depositado
+          </p>
+        ),
       },
       card3: {
         icon: <Hospital />,
-        title: "Indenizações por Acidente ou Doença Ocupacional",
-        description:
-          "Atuação em indenizações por acidentes ou doenças relacionadas ao trabalho, com foco na reparação justa e completa dos danos.",
+        title: "Saúde, Riscos e Ambiente de Trabalho",
+        description: (
+          <p>
+            ✔ Insalubridade e periculosidade
+            <br />✔ Indenização por doença ocupacional
+            <br />✔ Indenização por acidente de trabalho
+          </p>
+        ),
       },
       card4: {
-        icon: <Lock />,
-        title: "Estabilidade e Demissões Indevidas",
-        description:
-          "Defesa contra demissões injustas e discriminatórias, assegurando estabilidade para gestantes, PCDs e outros grupos protegidos.",
+        icon: <Users />,
+        title: "Estabilidade e Proteção do Trabalhador",
+        description: (
+          <p>
+            ✔ Estabilidade da gestante
+            <br />✔ Estabilidade por acidente de trabalho
+            <br />✔ Estabilidade CIPA e demais garantias legais
+          </p>
+        ),
       },
       card5: {
         icon: (
@@ -167,7 +191,7 @@ const contentLp01 = {
   whyUs: {
     sectionHeader: {
       miniTag: "ATENDIMENTO PERSONALIZADO E RESULTADOS REAIS",
-      title: "Por que escolher a Testoni para defender seus direitos",
+      title: "Por que escolher a Testoni para defender seus direitos?",
     },
     cards: {
       card1: {
@@ -206,8 +230,9 @@ const contentLp01 = {
       title: "Na Testoni Advocacia, fazemos seus direitos valerem",
       subtitle: (
         <p className="opacity-80">
-          Trabalhista ou previdenciário, nosso papel é garantir que você tenha o
-          amparo e a segurança que a lei assegura.
+          Mais de <strong>50 avaliações máximas no Google</strong> confirmam:
+          atendimento rápido, explicações claras e resultados que realmente
+          ajudam quem precisa.
         </p>
       ),
     },
@@ -256,7 +281,7 @@ const contentLp01 = {
         </svg>
       ),
       title: "Email",
-      description: `${infos.email}@${infos.emailSecundario}`,
+      description: `${infos.emailSecundario}`,
     },
     card3: {
       icon: (
