@@ -22,7 +22,7 @@ function FullImg({ obs }) {
           }}
         >
           {/* Gradiente por cima da imagem */}
-          <div className="absolute inset-0 bg-gradient-to-b from-white/20 to-white z-20"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-white/30 to-white z-20"></div>
 
           {/* Conteúdo acima de tudo */}
           <div className="relative z-30">
