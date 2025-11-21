@@ -12,7 +12,7 @@ function FullImg({ obs }) {
     <div className="gradient-LP-Hero">
       <div className="relative desktop1:hidden font-mainFont h-auto">
         {/* Fundo preto atrás de tudo */}
-        <div className="absolute inset-0 bg-gradient-to-b from-lpvHeroGradientTop to-lpvHeroGradientBot z-0"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white to-white z-0"></div>
 
         {/* Imagem de fundo */}
         <div
@@ -22,7 +22,7 @@ function FullImg({ obs }) {
           }}
         >
           {/* Gradiente por cima da imagem */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-lpvHeroGradientBot z-20"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-white/30 to-white z-20"></div>
 
           {/* Conteúdo acima de tudo */}
           <div className="relative z-30">
@@ -30,7 +30,7 @@ function FullImg({ obs }) {
               <img
                 src={contentLp01.hero.logo.logoImg}
                 alt={contentLp01.hero.logo.alt}
-                className="ml-[5%] max-w-[40%] mt-[10%] tablet1:py-[7px] bg-white p-1 rounded-md "
+                className="ml-[5%] max-w-[40%] mt-[10%] tablet1:py-[7px] "
               />
             </MotionDivDownToUp>
 
@@ -41,14 +41,14 @@ function FullImg({ obs }) {
                     <div className="flex flex-col w-full desktop1:w-[50%] desktop1:mr-[20px]">
                       <div className="desktop1:mt-0">
                         <MotionDivDownToUp>
-                          <div className="flex text-white justify-center desktop1:justify-start font-semibold font-mainFont leading-[30px] phone2:leading-[40px] phone3:leading-[45px] tablet1:leading-[55px] desktop1:leading-[70px] text-center desktop1:text-left text-title3 phone2:text-title4 phone3:text-title5 tablet1:text-title6 mb-[24px] [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
+                          <div className="flex text-black justify-center desktop1:justify-start font-semibold font-mainFont leading-[30px] phone2:leading-[40px] phone3:leading-[45px] tablet1:leading-[55px] desktop1:leading-[70px] text-center desktop1:text-left text-title3 phone2:text-title4 phone3:text-title5 tablet1:text-title6 mb-[24px] ">
                             {contentLp01.hero.textArea.title}
                           </div>
                         </MotionDivDownToUp>
 
                         <MotionDivDownToUp>
-                          <div className="flex justify-center text-center text-white desktop1:text-left desktop1:justify-start phone1:w-full font-secondFont text-paragraph3 phone3:text-paragraph5">
-                            <p className="mb-[40px] opacity-100 [text-shadow:_2px_2px_1px_rgb(0_0_0_/_100%)]">
+                          <div className="flex justify-center text-center text-black desktop1:text-left desktop1:justify-start phone1:w-full font-secondFont text-paragraph3 phone3:text-paragraph5">
+                            <p className="mb-[40px] opacity-100 ">
                               {contentLp01.hero.textArea.subtitle}
                             </p>
                           </div>
@@ -85,7 +85,7 @@ function FullImg({ obs }) {
                               <div className="flex justify-center mt-12 desktop1:justify-start">
                                 <div className="flex flex-col items-center desktop1:flex-row text-primary">
                                   {contentLp01.hero.textArea.obsHero.icon}
-                                  <p className="text-white ml-[10px] text-center mt-[12px] desktop1:mt-0">
+                                  <p className="text-black ml-[10px] text-center mt-[12px] desktop1:mt-0">
                                     {contentLp01.hero.textArea.obsHero.text}
                                   </p>
                                 </div>
@@ -103,17 +103,17 @@ function FullImg({ obs }) {
         </div>
       </div>
 
-      {/*-------- Versão para tablet1 pra frente -------- */}
+      {/*-------- Versão para desktop1 pra frente -------- */}
       <div
-        className="hidden desktop1:flex bg-top font-mainFont bg-[size:100%_auto] phone2:bg-[size:100%_auto] phone3:bg-[size:100%_auto] tablet1:bg-cover bg-no-repeat h-auto"
+        className="hidden desktop1:flex bg-top font-mainFont bg-no-repeat h-auto"
         style={{
           backgroundImage: `url(${contentLp01.hero.bgImg})`,
-          backgroundPosition: "top",
+          backgroundPosition: "center",
         }}
       >
         <SectionArea
           paddingTopAndBottom={false}
-          className="h-full bg-black bg-opacity-0"
+          className="h-full bg-white bg-opacity-20"
         >
           <SectionWrapper className="">
             <div className="flex w-full">
@@ -123,18 +123,18 @@ function FullImg({ obs }) {
                     <img
                       src={contentLp01.hero.logo.logoImg}
                       alt={contentLp01.hero.logo.alt}
-                      className="tablet1:w-[280px] desktop1:w-[250px] bg-white p-1 rounded-md desktop1:mb-[60px] "
+                      className="tablet1:w-[280px] desktop1:w-[250px] desktop1:mb-[60px] "
                     />
                   </MotionDivDownToUp>
                   <div className="mt-[30%] phone3:mt-[35%] tablet1:mt-[30px] desktop1:mt-0">
                     <MotionDivDownToUp className="">
-                      <div className="flex text-white justify-center desktop1:justify-start font-semibold leading-[45px] phone3:leading-[50px] tablet1:leading-[65px] desktop1:leading-[45px] text-center desktop1:text-left text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7 desktop1:text-title5 mb-[24px] [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
+                      <div className="flex text-black justify-center desktop1:justify-start font-semibold leading-[45px] phone3:leading-[50px] tablet1:leading-[65px] desktop1:leading-[45px] text-center desktop1:text-left text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7 desktop1:text-title5 mb-[24px]">
                         {contentLp01.hero.textArea.title}
                       </div>
                     </MotionDivDownToUp>
                     <MotionDivDownToUp className="">
-                      <div className="flex justify-center text-center text-white desktop1:text-left desktop1:justify-start phone1:w-full font-secondFont text-paragraph4 phone3:text-paragraph5">
-                        <p className="mb-[40px] opacity-100 [text-shadow:_2px_2px_1px_rgb(0_0_0_/_100%)]">
+                      <div className="flex justify-center text-center text-black desktop1:text-left desktop1:justify-start phone1:w-full font-secondFont text-paragraph4 phone3:text-paragraph5">
+                        <p className="mb-[40px] opacity-100 ">
                           {contentLp01.hero.textArea.subtitle}
                         </p>
                       </div>
@@ -169,7 +169,7 @@ function FullImg({ obs }) {
                           <div className="flex justify-center mt-12 desktop1:justify-start">
                             <div className="flex flex-col items-center desktop1:flex-row text-primary">
                               {contentLp01.hero.textArea.obsHero.icon}
-                              <p className="text-white  ml-[10px] text-center mt-[12px] desktop1:mt-0">
+                              <p className="text-black  ml-[10px] text-center mt-[12px] desktop1:mt-0">
                                 {contentLp01.hero.textArea.obsHero.text}{" "}
                               </p>
                             </div>
