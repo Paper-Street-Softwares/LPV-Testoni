@@ -9,14 +9,14 @@ function FullImg({ obs }) {
   const navigate = useNavigate();
 
   return (
-    <div className="gradient-LP-Hero">
+    <div className="gradient-LP-Hero desktop1:min-h-screen ">
       <div className="relative desktop1:hidden font-mainFont h-auto">
         {/* Fundo preto atrás de tudo */}
         <div className="absolute inset-0 bg-gradient-to-b from-white to-white z-0"></div>
 
         {/* Imagem de fundo */}
         <div
-          className="relative z-10 bg-[size:100%_auto] phone2:bg-[size:100%_auto] phone3:bg-[size:100%_auto] bg-no-repeat"
+          className="relative z-10 bg-[size:100%_auto] phone2:bg-[size:100%_auto] phone3:bg-[size:100%_auto]  bg-no-repeat"
           style={{
             backgroundImage: `url(${contentLp01.hero.bgImg})`,
           }}
@@ -105,18 +105,26 @@ function FullImg({ obs }) {
 
       {/*-------- Versão para desktop1 pra frente -------- */}
       <div
-        className="hidden desktop1:flex bg-top font-mainFont bg-no-repeat h-auto"
-        style={{
-          backgroundImage: `url(${contentLp01.hero.bgImg})`,
-          backgroundPosition: "center",
-        }}
+        className="bg-center bg-no-repeat hidden desktop1:flex"
+        // style={{
+        //   backgroundImage: `url(${contentLp01.hero.bgImg})`,
+        //   backgroundPosition: "center",
+        // }}
       >
+        <div className="absolute inset-0 z-0">
+          <img
+            src={contentLp01.hero.bgImg}
+            alt="Imagem ilustrativa"
+            className="object-cover w-full h-full"
+          />
+          <div className="absolute inset-0 bg-white bg-opacity-40 "></div>
+        </div>
         <SectionArea
           paddingTopAndBottom={false}
-          className="h-full bg-white bg-opacity-20"
+          className="h-full z-10 min-h-screen"
         >
           <SectionWrapper className="">
-            <div className="flex w-full">
+            <div className="flex w-full min-h-screen items-center">
               <div className="flex phone1:flex-col-reverse gap-[40px] desktop1:flex-row desktop1:justify-between w-full max-w-[1215px] items-center pb-[64px] pt-[46px] desktop1:pt-[68px] desktop1:pb-[96px]">
                 <div className="flex flex-col w-full desktop1:w-[50%] desktop1:mr-[20px]">
                   <MotionDivDownToUp className="flex justify-start tablet1:justify-center desktop1:justify-start">
